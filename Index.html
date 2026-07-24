@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamran Khatik | Portfolio</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Canvas Particle Stars Background -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Glassmorphic Header Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" class="logo-text">&lt;Kamran/&gt;</a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#latest">LATEST</a></li>
+            <li><a href="#category">CATEGORY</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search here...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section Split Layout -->
+    <section class="hero" id="home">
+        <!-- Left Side Text Content -->
+        <div class="hero-content">
+            <h3>HELLO, IT'S ME</h3>
+            <h1>Kamran Khatik</h1>
+            <h2>I am a <span class="typing-text"></span></h2>
+        </div>
+
+        <!-- Right Side Interactive Python Code Terminal -->
+        <div class="code-terminal">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">developer.py</span>
+            </div>
+            <div class="terminal-body">
+<pre><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Kamran Khatik"</span>
+        self.role = <span class="string">"Full Stack Developer"</span>
+        self.skills = [<span class="string">"Python"</span>, <span class="string">"JavaScript"</span>, <span class="string">"HTML/CSS"</span>]
+
+    <span class="keyword">def</span> <span class="function">code</span>(self):
+        <span class="keyword">return</span> <span class="string">"Turning ideas into reality..."</span>
+
+dev = Developer()
+print(dev.code())</code></pre>
+            </div>
+        </div>
+    </section>
+    <!-- About & Skills Section -->
+<section class="about-section" id="latest">
+    <div class="section-title">
+        <h2>About <span>Me</span></h2>
+        <p>Get to know my journey and tech stack</p>
+    </div>
+
+    <div class="about-container">
+        <!-- Bio Card -->
+        <div class="about-card bio-card">
+            <i class="fa-solid fa-code-branch card-icon"></i>
+            <h3>Who I Am</h3>
+            <p>I am a passionate Computer Applications student and Full Stack Developer focused on crafting dynamic web applications and solving complex problems with Python & Modern Web Technologies.</p>
+        </div>
+
+        <!-- Skills Grid Card -->
+        <div class="about-card skills-card">
+            <i class="fa-solid fa-laptop-code card-icon"></i>
+            <h3>Tech Stack</h3>
+            <div class="skills-tags">
+                <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL / Databases</span>
+                <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section -->
+<section class="services-section" id="service">
+    <div class="section-title">
+        <h2>My <span>Services</span></h2>
+        <p>What I bring to the table</p>
+    </div>
+
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fa-solid fa-laptop-code service-icon"></i>
+            <h3>Web Development</h3>
+            <p>Building responsive, fast, and modern web applications with clean architecture and neon UI aesthetics.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-brands fa-python service-icon"></i>
+            <h3>Python Scripting</h3>
+            <p>Developing automation scripts, problem-solving logic, and backend tools tailored to modern needs.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+            <h3>Responsive Design</h3>
+            <p>Ensuring seamless layout optimization across mobile phones, tablets, and desktop displays.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="section-title">
+        <h2>Contact <span>Me</span></h2>
+        <p>Let's build something awesome together</p>
+    </div>
+
+    <div class="contact-container">
+        <!-- Social Info -->
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Have a project in mind or just want to say hi? Feel free to drop a message!</p>
+            <div class="contact-details">
+                <p><i class="fa-solid fa-envelope"></i> kamran@example.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Maharashtra, India</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2026 Kamran Khatik. Designed with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> & Code.</p>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
